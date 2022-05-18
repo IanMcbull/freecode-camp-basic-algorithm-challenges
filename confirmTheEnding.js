@@ -1,8 +1,12 @@
 /*
 Check if a string (first argument, str) ends with the given target string (second argument, target).
 */
-const confirmEnding = (str,ending) =>{
- return str.substr(-ending.length) === ending
+const confirmEnding = (str,target) =>{
+ return str.substr(-target.length) === target
 
 }
-console.log(confirmEnding("Congratulation", "on"))
+confirmEnding("Congratulation", "on")
+
+/*
+With this challnge, I used the substr method to return the last part of the string, then compared and checked whether the returned value, was equal to the target value
+*/
