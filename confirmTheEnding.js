@@ -8,5 +8,5 @@ const confirmEnding = (str,target) =>{
 confirmEnding("Congratulation", "on")
 
 /*
-With this challnge, I used the substr method to return the last part of the string, then compared and checked whether the returned value, was equal to the target value
+With this challenge, I used the substr method to return the last part of the string, then compared and checked whether the returned value, was equal to the target value
 */
