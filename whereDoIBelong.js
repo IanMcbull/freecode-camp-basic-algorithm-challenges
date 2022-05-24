@@ -4,21 +4,11 @@ For example, getIndexToIns([1,2,3,4], 1.5) should return 1 because it is greater
 */
 
 const getIndexToIns = (arr,num) =>{
- if(arr.length === 0){
-  return 0;
- } 
-   arr= arr.sort((a,b)=>a-b);
-    for (const element of arr) {
-     if(element >= num){
-        return arr.indexOf(element);
-     }
-     if(num > arr[arr.length - 1]){
-         return arr.length
-     }
- }
+ arr.push(num);
+ return arr.sort((a,b)=>a-b).indexOf(num)
 }
 
-getIndexToIns([10, 20, 30, 40, 50], 35);
+console.log(getIndexToIns([10, 20, 30, 40, 50], 35));
 
 /*
 The first thing I did, was to check whether the array had any values. If it didn't, then return zero.
